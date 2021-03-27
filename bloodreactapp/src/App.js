@@ -9,11 +9,11 @@ import { Container } from '@material-ui/core';
 function App() {
   return (
     <Provider store={store}>
-        <Container maxWidth="lg">
+        <Container maxWidth='lg'>
           <DCandidates></DCandidates>
         </Container>
         
-        <DCandidatesForm></DCandidatesForm>
+        
     </Provider>
 );
 }
