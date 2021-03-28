@@ -5,13 +5,19 @@ import {Provider} from 'react-redux'
 import  DCandidates  from './components/DCandidates';
 import DCandidatesForm from './components/DCandidatesForm';
 import { Container } from '@material-ui/core';
+import { ToastProvider } from 'react-toast-notifications';
 
 function App() {
   return (
     <Provider store={store}>
-        <Container maxWidth='lg'>
-          <DCandidates></DCandidates>
-        </Container>
+
+      <ToastProvider autoDismiss={true}>
+        <Container maxWidth='xl'>
+                  <DCandidates></DCandidates>
+                </Container>
+
+      </ToastProvider>
+        
         
         
     </Provider>
